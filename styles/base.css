@@ -12,7 +12,6 @@ header{
     background-color: white;
     top: 0px;
     left: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     
 
@@ -20,6 +19,7 @@ header{
 
 #course-title{
     padding-top: 20px;
+    display: block;
     
     
 }
@@ -38,7 +38,7 @@ header{
     text-decoration: none;
     color: rgb(252, 249, 249);
     font-weight: 600;
-    transition: color, 0,10s;
+    transition: color 0.1s;
 
 }
 .css-navegation a:hover{
@@ -51,7 +51,8 @@ main{
     flex-direction: column;
     position: relative;
     top: 100px;
-    font-family: Arial, Helvetica, sans-serif
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .division{
@@ -110,7 +111,7 @@ main{
 }
 
 .profile-pic{
-    width: 100%
+    width: 100%;
 }
 
 .middle-line{
@@ -163,6 +164,6 @@ footer{
     display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column
+   flex-direction: column;
 
 }
