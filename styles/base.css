@@ -1,4 +1,6 @@
 
+
+
 header{
     display: flex;
     align-items: center;
@@ -31,7 +33,7 @@ header{
     width: 100%;
     height: 60px;
     margin-top: 10px;
-    background-color: rgb(76, 76, 216);
+    background-color: rgb(64, 64, 153);
 
 }
 .css-navegation a{
@@ -45,54 +47,57 @@ header{
     color: rgb(12, 12, 14);
 }
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     position: relative;
     top: 100px;
     max-width: 1200px;
     margin: 0 auto;
 }
+.title-name{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
 
 .division{
     display: grid;
-    grid-template-columns: 850px 1fr;
-    column-gap: 10px;
-    
+    grid-template-columns: 700px  300px;
+    column-gap: 10px;   
+    position: relative;
+    left: 80px; 
 }
-.card{
-    padding-left: 10px;
-    height: 500px;
-}
+
 .card-1{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 0px;
     height: 100%;
+    width: 700px;
 }
 
 
 .card-1-title{
     margin-top: 0;
-    width: 840px;
-    background-color: rgb(76, 76, 216);
-     border-radius: 5px;
+    width: 100%;
+    background-color: rgb(64, 64, 153);
+    border-radius: 3px;
     display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    margin-left: 0px;
-    padding-left: 0;
     color: rgb(255, 255, 255);
+    height: 50px;
+}
+.card-1-title h1{
+    background-color: rgb(64, 64, 153)
 }
 .card-1-title, .title-name{
     font-weight: 500;
 }
 .presentation{
     display: grid;
-    grid-template-columns:600px 200px;
+    grid-template-columns:500px 150px;
     column-gap: 20px;
     
 }
@@ -105,6 +110,9 @@ main{
    
     
 }
+.description-about-me{
+    width: 100%;
+}
 .image-presentation{
     grid-column: 2;
     width: 100%;
@@ -112,6 +120,8 @@ main{
 
 .profile-pic{
     width: 100%;
+    border: 1px solid rgb(87, 85, 85);
+
 }
 
 .middle-line{
@@ -124,15 +134,20 @@ main{
     display: grid;
     grid-template-columns: 195px 400px;
     column-gap: 5px;
+    width: 400px;
+
 }
 
 .flag-section{
     
     width: 100%;
     grid-column: 1;
+    
 }
 .flag{
-    width: 100%;
+    width: 95%;
+     height: 90%;
+
 
 }
 .country-section{
@@ -140,22 +155,40 @@ main{
     grid-column: 2;
     padding-left: 10px;
 }
+
 .card-2{
 
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    width: 400px;   
+    display: grid;
+    grid-template-rows: 50px 400px; 
+    gap: 30px;
+    width:300px;
+
+
 
 }
+
 .resource-title{
-     background-color: rgb(76, 76, 216);
-     border-radius: 5px;
-     color: rgb(255, 255, 255);
-     height: 50px;
-     margin-top: 5px;
-     width: 300px;
-     padding-left:90px;
+    width: 100%;
+    background-color: rgb(64, 64, 153);
+    color: white;
+    border-radius:3px;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.resource-links{
+    grid-row: 2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
 }
 
 footer{
