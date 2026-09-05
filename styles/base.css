@@ -110,14 +110,14 @@ main{
 }
 .image-presentation{
     grid-column: 2;
-    width: 100%;
-    height:150px;
+    width: 124px;
+    height:121px;
 }
 
 .profile-pic{
     width: 100%;
     border: 1px solid rgb(87, 85, 85);
-    height: 100%
+    height: 100%;
 
 }
 
@@ -129,22 +129,25 @@ main{
 
 .description-about-country{
     display: grid;
-    grid-template-columns: 195px 400px;
+    grid-template-columns: 60px 300px;
     column-gap: 5px;
     width: 400px;
+    height: 100%;
 
 }
 
 .flag-section{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     width: 100%;
     grid-column: 1;
-    height: 100%;
+    height: 60px;
     
 }
 .flag{
-    width: 95%;
-     height: 90%;
+    width: 100%;
+    height:100%;
 
 
 }
