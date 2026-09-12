@@ -33,5 +33,12 @@ temples.forEach((temple)=>{
 
 temple_section.innerHTML = templeHTML;
 
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
+const heading = document.querySelector('.heading');
 
-
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+    heading.classList.toggle('show');
+});

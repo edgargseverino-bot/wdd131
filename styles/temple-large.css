@@ -1,8 +1,10 @@
 
 
-@media screen and (min-width: 700px) and (max-width: 1400px){
+@media screen and (min-width: 701px){
 
-   
+   #menu{
+    display: none;
+   }
 
     .right-section ul{
         grid-column: 2;
@@ -23,7 +25,9 @@
     .right-section ul a:hover{
         color: rgb(173, 216, 230)
     }
-
+    .left-section{
+        grid-column: 1;
+    }
     main{
         max-width: 1400px;
         margin: 0 auto;
