@@ -5,7 +5,7 @@
    #menu{
     display: none;
    }
-   .right-section{
+   nav{
         display:flex;
         flex-direction: row;
         justify-content: end;
