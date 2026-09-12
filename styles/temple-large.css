@@ -1,7 +1,10 @@
 
 
 @media screen and (min-width: 701px){
-
+    .heading{
+        display:flex;
+        flex-direction: row;
+    }
    #menu{
     display: none;
    }
