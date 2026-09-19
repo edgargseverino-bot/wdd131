@@ -7,6 +7,7 @@
     --firstcolor: rgb(0, 154, 68);
     --secondcolor: rgb(255, 255, 255);
     --thridcolor: rgb(255, 130, 0);
+    --fourthcolor: rgb(0,0,0);
 }
 
 /* General */
@@ -55,7 +56,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: black;
+    color: var(--fourthcolor);
     margin-bottom: 10px;
 }
 
@@ -81,6 +82,10 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 100%
 }
 
 .color-lines {
@@ -110,7 +115,7 @@ main {
 
 footer {
     color: var(--secondcolor);
-    background-color: black;
+    background-color: var(--fourthcolor);
     width: 100%;
     flex-direction: column;
     align-self: center;
@@ -154,8 +159,10 @@ footer {
 
     .place-name {
         background-color: var(--thridcolor);
-        color: black;
+        color: var(--fourthcolor);
         width: 100%;
     }
 }
-
+#windChill{
+    color: var(--fourthcolor);
+}

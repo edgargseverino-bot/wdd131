@@ -1,5 +1,10 @@
 
-
+:root {
+    --firstcolor: rgb(0, 154, 68);
+    --secondcolor: rgb(255, 255, 255);
+    --thridcolor: rgb(255, 130, 0);
+    --fourthcolor: rgb(0,0,0);
+}
 @media  screen  and (min-width:700px) {
     body{
         display: grid;
@@ -45,7 +50,7 @@
         background: linear-gradient(
             to bottom,
             transparent 40%,
-            rgb(0, 0, 0) 100%
+            var(--fourthcolor) 100%
         );
 
     }
@@ -77,13 +82,15 @@
         cursor: default;
     }
     .data-section{
-    background-color:rgba(100, 100, 100, 0.5);;
-    height: 100%;
-    margin-left: 0;  
-    grid-row: 1;
-    grid-column: 1;
-    justify-content: start;
-    align-items: start;   
+        background-color:var(--secondcolor);
+        height: 100%;
+        margin: 0;  
+        grid-row: 1;
+        grid-column: 1;
+        justify-content: start;
+        align-items: start;
+
+  
     }
     .weather-section{
         grid-row: 2;
@@ -92,7 +99,7 @@
         height: auto;
         align-content: end;
         justify-self: end;
-        background-color: rgba(100, 100, 100, 0.5);
+        background-color: var(--secondcolor);
         margin-right: 0;
     }
     .weather-section, .data-section{
@@ -102,9 +109,9 @@
         padding-right: 5px;
         padding-bottom: 2px;
         font-size: 20px;
-        box-shadow: 3px 3px 10px black;
+        box-shadow: 3px 3px 10px var(--fourthcolor);
         max-width: 300px;
-        color: white;
+        color: var(--secondcolor);
         display: flex;
         
     }
@@ -114,6 +121,7 @@
         width: 100%;
        box-sizing: border-box;
         text-align: center;
+        color: var(--fourthcolor)
     }
 
     .color-lines{
@@ -124,6 +132,9 @@
     
     .weather-icon{
         display: none;
+    }
+    .info{
+        color: var(--fourthcolor)
     }
 
     footer{
