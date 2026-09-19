@@ -166,3 +166,7 @@ footer {
 #windChill{
     color: var(--fourthcolor);
 }
+.weather_title::after{
+    content: "🌥️";
+
+}
