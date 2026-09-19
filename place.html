@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ireland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css"media="(min-width: 701px)" >
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="name-section">
+            <h1 class="place-name">IRELAND</h1>
+        </div>
+    </header>
+    <picture class="hero">
+        <source media="(max-width: 700px)" srcset="images/hero.webp" >
+        <source media="(min-width: 701px)" srcset="images/hero-large_(1).webp">
+        <img src="images/hero-large_(1).webp" alt="Ireland Island" width="1600"
+            height="900" fetchpriority="high" >
+    </picture>
+    <main>
+
+        <section class="data-section">
+            <div id="data">
+                <h2 class="data_title">DATA</h2>
+                <div class="info">
+                    <p>
+                        Area: 84,421 km2
+                    </p>
+                    <p>
+                        Population: 5,308,039 (2025)
+                    </p>   
+                    <p>
+                        Capital: Dublin
+                    </p>
+                    <p>
+                        Languages: English, Irish, ISL...
+                    </p>
+                    <p>
+                        Currency: Euro (EUR)
+                    </p>
+                    <p>
+                        Time Zone Greenwich Mean (UTC+0)
+                    </p>
+                    <p>
+                        Calling Code: +261
+                    </p>
+                    <p>
+                        Internet TLD: .mg
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <div id="weather">
+                <h2 class="weather_title">Weather 🌥️</h2>
+                <div class="info">
+                    <img src="images/weather.svg" alt="weather-icon" class="weather-icon" width="100" height="100">
+                    <p>
+                        Temperature: <span id="temperature"></span>
+                    </p>
+                    <p>
+                        Conditions: Mostly cloudly
+                    </p>
+                    <p>
+                        Wind: <span id="wind"></span>
+                    </p>
+                    <p>
+                        Wind Chill: <span id="windChill"></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="color-lines">
+                <div class="color-line color-1"></div>
+                <div class="color-line color-2"></div>
+                <div class="color-line color-3"></div>
+        </div>
+    </main>
+    <footer>
+        <p>
+             &copy;
+            <span id="currentyear">2026</span>  
+            Edgar Severino
+            Dominican Republic
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

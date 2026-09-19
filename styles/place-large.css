@@ -1,0 +1,137 @@
+
+
+@media  screen  and (min-width:700px) {
+    body{
+        display: grid;
+        grid-template-rows: 70px 1fr 50px;
+        width: 100%;
+        height: 700px;
+       }
+    body::selection{
+        color: var(--firstcolor);
+        background-color: var(--secondcolor);
+    
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        grid-row: 1;
+        background-color: rgba(255, 132, 0, 0.781);
+
+    }
+    .hero {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: linear-gradient(
+            to bottom,
+            transparent 40%,
+            rgb(0, 0, 0) 100%
+        );
+
+    }
+    main{
+        background: transparent;
+        margin-top: 70px;
+        grid-row: 2;
+        width: 90%;
+        height: auto;
+        font-size: 60px;
+        display:grid;
+        grid-template-rows: 1fr 1fr 20px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-self: center;
+        justify-self: center;
+    }
+ 
+    .name-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: auto;   
+    }
+    .place-name{
+        cursor: default;
+    }
+    .data-section{
+    background-color:rgba(100, 100, 100, 0.5);;
+    height: 100%;
+    margin-left: 0;  
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: start;
+    align-items: start;   
+    }
+    .weather-section{
+        grid-row: 2;
+        grid-column: 2;
+        width: auto;
+        height: auto;
+        align-content: end;
+        justify-self: end;
+        background-color: rgba(100, 100, 100, 0.5);
+        margin-right: 0;
+    }
+    .weather-section, .data-section{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        font-size: 20px;
+        box-shadow: 3px 3px 10px black;
+        max-width: 300px;
+        color: white;
+        display: flex;
+        
+    }
+    .weather_title, .data_title{
+        background-color: var(--firstcolor);
+        justify-self: center;
+        width: 100%;
+       box-sizing: border-box;
+        text-align: center;
+    }
+
+    .color-lines{
+    
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .weather-icon{
+        display: none;
+    }
+
+    footer{
+        color: var(--secondcolor);
+        height: auto;
+        margin-top: 10px;
+        grid-row: 3;
+        background-color: transparent;
+        
+    }
+}
