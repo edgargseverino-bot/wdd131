@@ -1,10 +1,4 @@
 
-:root {
-    --firstcolor: rgb(0, 154, 68);
-    --secondcolor: rgb(255, 255, 255);
-    --thridcolor: rgb(255, 130, 0);
-    --fourthcolor: rgb(0,0,0);
-}
 @media  screen  and (min-width:700px) {
     body{
         display: grid;
