@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore temples around the world, learn about their history, locations, and significance.">
+    <meta name="author" content="Edgar Gabriel Severino Gastón">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 701px)">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header class="heading">
+        <div class="left-section">
+            <p>Temple Album</p>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav class="right-section">
+            <div class="navigation">
+                <button id = "home-temple">Home</button>          
+                <button id = "old-temple">Old</button>
+                <button id = "new-temple">New</button>
+                <button id = "large-temple">Large</button>
+                <button id = "short-temple">Short</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="show-time">
+            <h1 class="title">Home</h1>
+            <div class="temple-section" id="temples"></div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear">2026</span>  
+            Edgar Severino
+            Dominican Republic
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
