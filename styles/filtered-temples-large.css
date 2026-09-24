@@ -1,4 +1,18 @@
-
+.data-temple{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.data-temple p{
+    margin: 0;
+    padding: 3px;
+}
+.data-temple span{
+    color: rgb(78, 3, 121)
+}
 
 @media screen and (min-width: 701px) {
 

@@ -77,7 +77,30 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",
+    area: 41010,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+  },
+  {
+    templeName: "Salt Lake Utah",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
+    area: 253015,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+  },
+  {
+    templeName: "San Diego California",
+    location: "San Diego, California, United States",
+    dedicated: "1993, April, 25",
+    area: 72000,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-9060-main.jpg"
+    },
 ];
 
 
@@ -105,10 +128,11 @@ function updloading_temple(array){
 	nav.addEventListener('click',(event) =>{
 		if (event.target.id === 'old-temple') {
 			temple_array = array.filter(element => element.dedicated.slice(0,4) < 1900);
-
 		} else if (event.target.id === 'new-temple') {
 			temple_array = array.filter(element => element.dedicated.slice(0,4) > 2000);
-		
+		}
+    else if (event.target.id === 'home-temple') {
+			temple_array = array.filter(element => element.area > 0);
 		} else if (event.target.id === 'short-temple') {
 			temple_array = array.filter(element => element.area < 10000);
 		} else if (event.target.id === 'large-temple') {
@@ -119,10 +143,12 @@ function updloading_temple(array){
 			templeHTML += `
 					<figure class="portrait">
 						<h2 class="description">${choice.templeName}</h2>
-						<p>Location: ${choice.location}</p>
-						<p>Dedicated: ${choice.dedicated}</p>
-						<p>Area: ${choice.area} sq ft</p>
-						<img src="${choice.imageUrl}" alt="${choice.templeName}">
+            <div class ="data-temple">
+              <p><span>Location:</span> ${choice.location}</p>
+              <p><span>Dedicated:</span> ${choice.dedicated}</p>
+              <p><span>Area:</span> ${choice.area} sq ft</p>
+            </div>
+						<img src="${choice.imageUrl}" alt="${choice.templeName}"  width= "100" height= "100" loading="lazy">
 					</figure>
 				`;
 		});
