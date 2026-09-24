@@ -20,27 +20,11 @@
         display: none;
     }
 
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .right-section ul a {
-        color: white;
-        transition: color 0.1s;
-    }
-
-    .right-section ul a:hover {
-        color: lightblue;
-    }
-
     main {
         max-width: 1400px;
         margin: 0 auto;
     }
 
-      
     .temple-section{
         display: flex;
         align-items: center;

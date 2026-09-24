@@ -2,16 +2,24 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root{
+    --first-color: rgb(59, 59, 143);
+    --second-color: rgb(255, 255, 255);
+}
 /* General styles */
 
 .heading {
-    color: white;
+    color: var(--second-color);
     display: grid;
     grid-template-columns: 1fr auto;
-    background-color: rgb(59, 59, 143);
+    background-color:var(--first-color);
     min-height: 70px;
 }
-
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .left-section {
     grid-column: 1;
     padding-left: 20px;
@@ -22,21 +30,24 @@
 .right-section {
     grid-column: 1 / 3;
     margin-top: -50px;
+    cursor: default; 
 }
 
-.right-section a {
-    color: white;
-    text-decoration: none;
-}
 
-.right-section ul {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
+
+
+.right-section button {
     padding-right: 20px;
+    border: none;
+    color: var(--second-color);
+    background: transparent;
+    transition: color 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.right-section button:hover{
+    color: rgb(13, 156, 175);
 }
 #menu {
     grid-column: 2;
@@ -54,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
 }
 .description{
     margin: 0;
@@ -84,8 +95,8 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
-    background-color: rgb(59, 59, 143);
+    color: var(--second-color);
+    background-color: var(--first-color);
 }
 
 
@@ -110,15 +121,17 @@ footer {
         width: 50px;
         height: 50px;
         padding: 0;
-        margin: 10px;
+        margin-top: -50px;
         border: none;
         border-radius: 5px;
-        background-color: rgb(59, 59, 143);
-        color: white;
+        background-color: var(--first-color);
+        color: var(--second-color);
         font-size: 2rem;
         cursor: pointer;
-        align-self: flex-end;
-        justify-self: start;
+        align-self: last baseline;
+        align-items: start;
+        grid-column: 2/3;
+      
     }
 
     #menu::before {
@@ -139,29 +152,20 @@ footer {
         flex-direction: column;
         width: 100%;
         padding: 0;
-        margin: 0;
-        list-style: none;
-        background-color: black;
+        background-color: var(--first-color);
     }
 
-    .navigation li {
+    .navigation button {
         display: none;
-        width: 100%;
+        width: 50%;
+        height: 50%;
     }
 
-    .navigation.show li {
+    .navigation.show button {
         display: block;
     }
 
-    .navigation a {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        box-sizing: border-box;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-    }
+    
 }
 
 
@@ -203,7 +207,7 @@ footer {
 
 .heading.show {
     display: grid;
-    grid-template-rows: 30px 240px;
+    grid-template-rows: 50px 210px;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -215,6 +219,7 @@ footer {
 
 .heading.show #menu {
     align-self: center;
+    margin-top: 5px;
 }
 
 .heading.show .right-section {
@@ -231,10 +236,3 @@ footer {
     row-gap: 5px;
 }
 
-.heading.show .navigation li {
-    display: block;
-}
-
-.heading.show .navigation a {
-    text-align: center;
-}
