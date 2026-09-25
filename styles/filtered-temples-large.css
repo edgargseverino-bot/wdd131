@@ -11,7 +11,7 @@
     padding: 3px;
 }
 .data-temple span{
-    color: rgb(78, 3, 121)
+    color: var(--key-word);
 }
 
 @media screen and (min-width: 701px) {

@@ -105,20 +105,7 @@ const temples = [
 
 
 let templeHTML ='';
-temples.forEach((temple) => {
-	
-	templeHTML +=`
-	
-		<figure class="portrait">
-			<h2 class="description">${temple.templeName}</h2>
-			<p>Location: ${temple.location}</p>
-			<p>Dedicated: ${temple.dedicated}</p>
-			<P>Area: ${temple.area} sq ft</p>
-			<img src="${temple.imageUrl}" alt="${temple.templeName}">
-		</figure> 
-	
-	`
-});
+
 let temple_array = [];
 const temple_selection = document.getElementById('temples');
 temple_selection.innerHTML = templeHTML;
