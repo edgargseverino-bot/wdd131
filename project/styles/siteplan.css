@@ -1,0 +1,41 @@
+.color-box-dark{
+    background-color: rgb(13, 13, 13);
+    color: rgb(225, 225, 225)
+}
+
+.color-box-red,
+header{
+    background-color: rgb(139, 0, 0);
+    color: rgb(225, 225, 225)
+}
+
+.color-box-white{
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(13, 13, 13);
+}
+.logo-image{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+
+
+body {
+    background-color: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+.oswald-font {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
