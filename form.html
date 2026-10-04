@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Post Review</title>
+
+</head>
+<body>
+    <h1 class="header-title">Product Review</h1>
+    <form method="get" action="review.html" class="formHTML">
+        <div class="product-select">
+            <label for="product">Product Name</label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product..</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="staring">
+                <label for="rating1" required class="rating">&star;
+                </label>
+                <input type="radio" name="rating" id="rating1" value="1">
+            </div>
+            <div class="staring">
+                <label for="rating2" class="rating">&star;&star;
+                </label>
+                <input type="radio" name="rating" id="rating2" value="2">
+            </div>
+            <div class="staring">
+                <label for="rating3" class="rating">&star;&star;&star;
+                </label>
+                <input type="radio" name="rating" id="rating3" value="3">
+            </div>
+            <div class="staring">
+                <label for="rating4" class="rating" >&star;&star;&star;&star;
+                </label>
+                <input type="radio" name="rating" id="rating4" value="4">
+            </div>
+            <div class="staring">
+                <label for="rating5" class="rating">&star;&star;&star;&star;&star;
+                </label>
+                <input type="radio" name="rating" id="rating5" value="5">
+            </div>
+        </fieldset>
+
+        <label for="date" id="Dinstallation">Date of Installation
+            <input type="date" name="set_day" id="date" required>   
+        </label>
+        
+     
+        <fieldset class="check">
+            <legend>Which features did you find useful in the product? <span>(Check all that apply)</span></legend>
+            <div class="check-box">
+                <label for="durability">
+                    <input type="checkbox" value="durability" id="durability" name="features">
+                    Durability
+                </label>
+                <label for="useful">
+                    <input type="checkbox" value="useful" id="useful" name="features">
+                    Ease to Use
+                </label>
+                <label for="performance">
+                    <input type="checkbox" value="performance" id="performance" name="features">
+                    Performance
+                </label>
+                <label for="design">
+                    <input type="checkbox" value="design" id="design" name="features">
+                    Design
+                </label>
+            </div>
+        </fieldset>
+        
+
+        <label for="review" id="written">Written Review <span class="optional">(Optional)</span>
+            <textarea id="review" name ="write"></textarea> 
+        </label>
+
+        <label for="user" id="name">Your Name <span class="optional">(Optional)</span>
+            <input type="text" name="user_name" id="user">
+        </label>
+        <div class="submit">
+            <input type="submit" value="Post Review" id="submit">
+        </div>
+    </form>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear">2026</span>  
+            Edgar Severino
+            Dominican Republic
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
