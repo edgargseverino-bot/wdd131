@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a product review by rating the product, selecting useful features, and sharing your experience.">
+    <meta name="author" content="Edgar Severino">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <title>Post Review</title>
 
 </head>
 <body>
-    <h1 class="header-title">Product Review</h1>
+    <header>
+        <h1 class="header-title">Product Review</h1>
+    </header>
     <form method="get" action="review.html" class="formHTML">
         <div class="product-select">
             <label for="product">Product Name</label>
@@ -22,27 +26,27 @@
             <div class="staring">
                 <label for="rating1" required class="rating">&star;
                 </label>
-                <input type="radio" name="rating" id="rating1" value="1">
+                <input type="radio" name="rating" id="rating1" value="1" required>
             </div>
             <div class="staring">
                 <label for="rating2" class="rating">&star;&star;
                 </label>
-                <input type="radio" name="rating" id="rating2" value="2">
+                <input type="radio" name="rating" id="rating2" value="2" required>
             </div>
             <div class="staring">
                 <label for="rating3" class="rating">&star;&star;&star;
                 </label>
-                <input type="radio" name="rating" id="rating3" value="3">
+                <input type="radio" name="rating" id="rating3" value="3"required>
             </div>
             <div class="staring">
                 <label for="rating4" class="rating" >&star;&star;&star;&star;
                 </label>
-                <input type="radio" name="rating" id="rating4" value="4">
+                <input type="radio" name="rating" id="rating4" value="4" required>
             </div>
             <div class="staring">
                 <label for="rating5" class="rating">&star;&star;&star;&star;&star;
                 </label>
-                <input type="radio" name="rating" id="rating5" value="5">
+                <input type="radio" name="rating" id="rating5" value="5" required>
             </div>
         </fieldset>
 

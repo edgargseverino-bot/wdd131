@@ -4,193 +4,195 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-input:is([type="checkbox"], [type="submit"],
-[type="radio"]
-){
-    cursor: pointer;
-}
-label{
-    font-weight: 400;
-}
+@media screen and (min-width: 500px){
+    input:is([type="checkbox"], [type="submit"],
+    [type="radio"]
+    ){
+        cursor: pointer;
+    }
+    label{
+        font-weight: 400;
+    }
 
-input:is( [type="text"],[type="date"], [type="submit"]), #review, select{
-    border:none;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(34, 33, 33, .49);
-    transition: margin-left .14s;
-    padding-left: 5px
-}
-input:is( [type="text"],[type="date"], [type="submit"]):hover, #review:hover, select:hover{
-    margin-left: 3px;
+    input:is( [type="text"],[type="date"], [type="submit"]), #review, select{
+        border:none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 5px rgba(34, 33, 33, .49);
+        transition: margin-left .14s;
+        padding-left: 5px
+    }
+    input:is( [type="text"],[type="date"], [type="submit"]):hover, #review:hover, select:hover{
+        margin-left: 3px;
 
-}
-input:is([type="date"]),select{
-    cursor: pointer;
-}
-.optional{
-    color: rgb(68, 13, 121);
-    width: auto;
+    }
+    input:is([type="date"]),select{
+        cursor: pointer;
+    }
+    .optional{
+        color: rgb(68, 13, 121);
+        width: auto;
+        
+    }
+    h1{
+        margin-bottom: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .check-box{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+
+    }
+    .product-select label, legend, #Dinstallation, #written, #name{
+        font-weight: 600;
+    }
+
+    body{ 
+        width: 400px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
     
-}
-h1{
-    margin-bottom: 0;
-    border-top-right-radius: 10px;
-}
+        
+    }
 
-.check-box{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-
-}
-.product-select label, legend, #Dinstallation, #written, #name{
-    font-weight: 600;
-}
-
-body{ 
-    width: 400px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
-    align-self: center;
- 
-    
-}
-
-#written{
-    padding-left: 5px;
-}
-#review{
-    height: 70px;
-    width: 95%;
-    margin-left: 5px;
-    transition: opacity 0.15s
-}
-#review:focus,#user:focus{
-    outline: none;
-}
-#review:hover{
-    opacity: 70%;
-}
-.formHTML{
-   gap: 60px;
-   width: 100%;
-   background-color: rgb(194, 189, 189);
-   
-}
-footer, .header-title{
-
-    background-color: var(--background);
-    color: white;
+    #written{
+        padding-left: 5px;
+    }
+    #review{
+        height: 70px;
+        width: 95%;
+        margin-left: 5px;
+        transition: opacity 0.15s
+    }
+    #review:focus,#user:focus{
+        outline: none;
+    }
+    #review:hover{
+        opacity: 70%;
+    }
+    .formHTML{
+    gap: 60px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-footer{
-    border-bottom-right-radius: 10px;
-
-}
-p{
-    margin: auto;
-}
-
-
-.staring{
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(194, 189, 189);
     
+    }
+    footer, .header-title{
 
+        background-color: var(--background);
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer{
+        border-bottom-right-radius: 10px;
+
+    }
+    p{
+        margin: auto;
+    }
+
+
+    .staring{
+        display: flex;
+        flex-direction: column;
+        
+
+        
+    }
+    fieldset{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        padding-left: 5px;
+    }
+
+    fieldset:has(.staring) .staring{
+        padding-left:5px;
+    }
+
+
+    .product-select{
+        padding-left: 5px;
+        margin: 0;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+    #product{
+        width: 99%;
+    }
+
+    fieldset, .product-select, #date{
+        margin-bottom: 20px;
+    }
+    #Dinstallation{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        padding-left: 4px;
+    }
+
+    #date{
+        width: 97%;
+    }
+
+
+    #name{
+        padding-left: 5px;
+    }
+    #user{
+        height: 30px;
+        width: 95%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    #user:hover{
+        opacity: 70%;
+    }
+    fieldset, .check-box{
+        border: none;
+    }
+
+    .submit{
+        display: flex;
+        justify-items: center;
+        width: 90%;
+        height: 50px;
+        padding-left: 20px;
+        margin-bottom: 10px;
     
-}
-fieldset{
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    padding-left: 5px;
-}
+    }
+    #submit{
+        width: 100%;
+        color: rgb(238, 236, 236);
+        background-color: var(--background);
+        font-weight:bold
+        
+    }
 
-fieldset:has(.staring) .staring{
-    padding-left:5px;
-}
+    #submit:hover{
+        background-color: rgb(22, 73, 114);
+        color: rgb(255, 255, 255);
+        transition: color 0.15s;
+        
+    }
 
-
-.product-select{
-    padding-left: 5px;
-    margin: 0;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: 5px;
+    legend, h1, footer{
+        cursor: default;
+    }
 
 }
-#product{
-    width: 99%;
-}
-
-fieldset, .product-select, #date{
-    margin-bottom: 20px;
-}
-#Dinstallation{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-    padding-left: 4px;
-}
-
-#date{
-    width: 97%;
-}
-
-
-#name{
-    padding-left: 5px;
-}
-#user{
-    height: 30px;
-    width: 95%;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    transition: opacity 0.15s;
-}
-#user:hover{
-    opacity: 70%;
-}
-fieldset, .check-box{
-    border: none;
-}
-
-.submit{
-    display: flex;
-    justify-items: center;
-    width: 90%;
-    height: 50px;
-    padding-left: 20px;
-    margin-bottom: 10px;
-   
-}
-#submit{
-    width: 100%;
-    color: rgb(238, 236, 236);
-    background-color: var(--background);
-    font-weight:bold
-    
-}
-
-#submit:hover{
-    background-color: rgb(22, 73, 114);
-    color: rgb(255, 255, 255);
-    transition: color 0.15s;
-    
-}
-
-legend, h1, footer{
-    cursor: default;
-}
-
