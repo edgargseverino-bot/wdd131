@@ -258,7 +258,7 @@ export const movies = [
     description: "A computer hacker discovers that reality is an illusion and joins a rebellion against machines controlling humanity.",
     rating: { stars: 4.5, count: 3100000 },
     review: [ 
-      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: ' I don&apos;t think any other film will ever compare to this one; it&apos;s absolutely wonderful with a plot that keeps you hooked until the very end. 100% recommended.', profile: "images/reviews/kiara_jefferson.webp"}],
+      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: "I don&apos;t think any other film will ever compare to this one; it's absolutely wonderful with a plot that keeps you hooked until the very end. 100% recommended.", profile: "images/reviews/kiara_jefferson.webp"}],
     actors: [
       { name: "Keanu Reeves", role: "Neo", image: "images/profiles/keanu_reeves.webp" },
       { name: "Laurence Fishburne", role: "Morpheus", image: "images/profiles/laurence_fishburne.webp" },
@@ -421,7 +421,7 @@ export const movies = [
     description: "Peter Parker struggles to balance his personal life with his responsibilities as Spider-Man while facing a brilliant scientist turned villain.",
     rating: { stars: 4.0, count: 800000 },
     review: [ 
-      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: 'We all agree that Tobey Maguire is the best Spider-Man ever! I love this movie and all the other Spider-Man movies he&apos;s in. The creators of this franchise never disappoint with Spider-Man films.', profile: "images/reviews/yuderka-cayetan.webp"},
+      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: "We all agree that Tobey Maguire is the best Spider-Man ever! I love this movie and all the other Spider-Man movies he's in. The creators of this franchise never disappoint with Spider-Man films.", profile: "images/reviews/yuderka-cayetan.webp"},
       {name: 'Wetnni C. Mercedes Berges', date: 'Yesterday', review: 'This movie is everything that’s good in life: action, drama, humor, and a really good story line. Spider-Man 2 is emotionally realistic and I could watch it over and over without getting tired of it.', profile: 'images/reviews/wetnni-berges.webp'}],
       actors: [
         { name: "Tobey Maguire", role: "Peter Parker / Spider-Man", image: "images/profiles/tobey_maguire.webp" },
@@ -441,7 +441,7 @@ export const movies = [
     rating: { stars: 4.0, count: 1200000 },
     review: [ 
       {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: 'Blood, drama, guns, jokes, and love are all right in this movie. My friends and I love this movie and all the other Deadpool movies, they never disappoint.', profile: "images/reviews/yuderka-cayetan.webp"},
-      {name: 'Francelis Acevedo', date: '3 days ago', review: 'If you want to have some fun, Deadpool is the ideal movie, it&apos;s very good, the humor, the script, the characters and the story are crazy, it&apos;s excellent.', profile: "images/reviews/anonymous.webp"},
+      {name: 'Francelis Acevedo', date: '3 days ago', review: "If you want to have some fun, Deadpool is the ideal movie, it's very good, the humor, the script, the characters and the story are crazy, it's excellent.", profile: "images/reviews/anonymous.webp"},
       {name: 'Merolyn Guzmán', date: '4 days ago', review: 'He makes too many out-of-place comments, and he likes to tempt anyone very much.', profile: "images/reviews/merolyn_guzman.webp"}],
     actors: [
       { name: "Ryan Reynolds", role: "Wade Wilson / Deadpool", image: "images/profiles/ryan-reynolds.webp" },
@@ -461,7 +461,7 @@ export const movies = [
     description: "A brilliant but arrogant surgeon discovers the mystical arts after a devastating accident ends his medical career.",
     rating: { stars: 3.5, count: 800000 },
     review: [ 
-      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: 'I didn&apos;t expect this movie to be so good. When I first read the title, I didn&apos;t have much faith in it, but I don&apos;t regret having the chance to see it. It made me sad to learn that Doctor Strange could&apos;t be with the person he loves in any of the universes, but I suppose some of us have been there. I love this movie and recommend watching it with your family.', profile: "images/reviews/yuderka-cayetan.webp"},
+      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: "I didn't expect this movie to be so good. When I first read the title, I didn&apos;t have much faith in it, but I don&apos;t regret having the chance to see it. It made me sad to learn that Doctor Strange could&apos;t be with the person he loves in any of the universes, but I suppose some of us have been there. I love this movie and recommend watching it with your family.", profile: "images/reviews/yuderka-cayetan.webp"},
         {name: 'Dianna', date: '4 days ago', review: 'I thought Doctor Strange was awesome, especially the special effects—like when the cities started folding up like a giant mirror; that looked incredible. Benedict Cumberbatch is fantastic in the role of the arrogant doctor who learns to use magic. It’s a really entertaining movie that never gets boring.', profile: 'images/reviews/dianna.webp'},
       {name: 'Jefferson Lugiery', date:'Yesterday', review:"The movie is incredibly good; the past is painful, but it shows that if we can achieve something, we have far greater potential for greatness.", profile: 'images/reviews/kiara_jefferson.webp'
 
@@ -518,7 +518,7 @@ export const movies = [
     description: "An movie warrior leaves her island paradise and enters the world of humanity to help end a devastating war.",
     rating: { stars: 3.5, count: 760000 },
     review: [ 
-      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: 'This movie is good, it&apos;s interesting, but I don&apos;t really like hearing the original version because of the actress who plays Wonder Woman; it&apos;s a bit awkward and makes me laugh. But putting all that aside, the movie is good.', profile: "images/reviews/yuderka-cayetan.webp"},
+      {name: 'Yuderka Cayetan Paul', date: '2 days ago', review: "This movie is good, it's interesting, but I don&apos;t really like hearing the original version because of the actress who plays Wonder Woman; it's a bit awkward and makes me laugh. But putting all that aside, the movie is good.", profile: "images/reviews/yuderka-cayetan.webp"},
       {
       }],
     

@@ -94,5 +94,11 @@ footer{
     display: flex;
     align-content: center;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+footer p{
+    align-self: center;
+    justify-self: center; 
 }

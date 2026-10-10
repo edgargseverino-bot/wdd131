@@ -22,6 +22,7 @@
 .movie-header a {
     color: var(--white-color);
     text-decoration: none;
+    width: auto;
 }
 
 /* =========================
@@ -47,7 +48,7 @@
 }
 .movie-logo {
     display: block;
-    width: 150px;
+    width: auto;
     height: auto;
     margin-left: 10px;
     font-size: 20px;
