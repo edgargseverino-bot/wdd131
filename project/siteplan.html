@@ -3,116 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Edgar Gabriel SEverino Gastón">
-    <meta name="description" content="Discover movies by genre, year, popularity, and more. Find your next favorite movie with ease.">
- 
-    <title>movie explorer - site plan</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <title>Movie Explorer</title>
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/movie-header.css">
+    <link rel="stylesheet" href="styles/pages/siteplan.css">
+
+    <script type="module" src="scripts/siteplan.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>movie explorer</h1>
-        
-        <p>website planning document</p>
-    </header>
+    <header class="movie-header"></header>
+    
 
     <main>
-        <section>
-            <h2>site name</h2>
-            <img src="images/logo.svg" alt="Movie Explorer logo" class="logo-image">
-            <p>movie explorer</p>
-            <p>movie explorer is a movie discovery website that allows users
-                to explore movies by genre, popularity, release year, and other
-                categories.</p>
+        <section class="movies-section">
+            <h1>Explore Movies</h1>
+            <div class="products-grid js-movies-grid"></div>
         </section>
-
-        <section>
-            <h2>site purpose</h2>
-            <p> 
-                movie explorer will provide users with an easy way to browse
-                and discover movies. The website will display movie posters,
-                titles, release years, durations, genres, and other movie
-                information.
-                Users will also be able to search for movies and filter them
-                by different categories.
-            </p>
-        </section>
-
-        <section>
-            <h2>scenarios</h2>
-            <ul>
-                <li>how can I find movies from a specific genre?</li>
-                <li>how can I find popular movies to watch?</li>
-                <li>where can I find information about a specific movie?</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>color schema</h2>
-            <p class="color-box-dark">#0d0d0d - main background</p>
-
-            <p class="color-box-red">#8b0000 - accent and navigation</p>
-
-            <p class="color-box-white">#ffffff - main text</p>
-        </section>
-
-        <section>
-            <h2>typography</h2>
-            <p>oswald--<span class="oswald-font">headings and logo</span></p>
-            <p>
-                roboto--<span class="roboto-font"> body and movie information </span>
-            </p>
-        </section>
-
-        <section>
-            <h2>wireframes</h2>
-            <p> desktop wireframe</p>
-               <!-- ┌───────────────────────────────────────────────────────┐
-                    │ movie explorer     home  new  popular  genre   sign in│
-                    ├───────────────────────────────────────────────────────┤
-                    │ movies    decade ▼   genre ▼   year ▼    [ search ]   │
-                    ├───────────────────────────────────────────────────────┤
-                    │                                                       │
-                    │   ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐│
-                    │   │ img │  │ img │  │ img │  │ IMG │  │ img │  │ img ││
-                    │   └─────┘  └─────┘  └─────┘  └─────┘  └─────┘  └─────┘│
-                    │    movie    movie    movie    movie    movie    movie │
-                    │                                                       │
-                    │   ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐  ┌─────┐│
-                    │   │ img │  │ img │  │ img │  │ img │  │ img │  │ img ││
-                    │   └─────┘  └─────┘  └─────┘  └─────┘  └─────┘  └─────┘│
-                    │    movie    movie     movie    movie    movie   movie │
-                    │                                                       │
-                    ├───────────────────────────────────────────────────────┤
-                    │              < prev    1  2  3    next >              │
-                    └───────────────────────────────────────────────────────┘ -->
-            
-            <p>mobile wireframe</p>
-            <!-- ┌───────────────────┐
-                 │ movie explorer ☰ │
-                 ├───────────────────┤
-                 │ home  new popular │
-                 ├───────────────────┤
-                 │ genre ▼   year ▼  │
-                 │[ search movies ]  │
-                 ├───────────────────┤
-                 │  ┌─────┐ ┌─────┐  │
-                 │  │ img │ │ img │  │
-                 │  └─────┘ └─────┘  │
-                 │   Movie    Movie  │
-                 │                   │
-                 │  ┌─────┐ ┌─────┐  │
-                 │  │ img │ │ img │  │
-                 │  └─────┘ └─────┘  │
-                 │   movie    movie  │ 
-                 └───────────────────┘-->
-        </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2026 movie explorer</p>
+        <p>&copy; <span id="currentyear"></span> Movie Explorer - Edgar Severino</p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

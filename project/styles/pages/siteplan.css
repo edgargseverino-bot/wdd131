@@ -1,0 +1,242 @@
+
+*{
+  h1,h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+  }
+
+}
+.main {
+  margin-top: 60px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  padding-top: 0px;
+  display: grid;
+  grid-template-rows: 300px 20px 20px;
+  cursor: pointer;
+  transition: scale 0.15s;
+}
+
+.product-container:hover{
+  scale: calc(1.02);
+  z-index: 1;
+}
+
+.product-image-container {
+  grid-row: 1;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.degrated{
+  background: var(--tabs);
+}
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.product-rating-container{
+  display: flex;;
+  padding-left: 10px;
+  background: var(--tabs);
+  align-items: center;
+  justify-content: center;
+
+  grid-row: 3;
+}
+.movie-name-text{
+  grid-row: 2;
+  height: 100%;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-clamp: 1;
+  overflow: hidden;
+  justify-self: center;
+
+}
+
+
+
+/* FAVORITES PAGE */
+.favorite-main {
+    min-height: 100vh;
+    margin-top: 80px;
+    padding: 25px 20px 40px;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    box-sizing: border-box;
+}
+
+.favorite-main h1 {
+    margin: 0 0 25px;
+    font-size: 28px;
+}
+
+/* FAVORITE MOVIE GRID */
+.favorite-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px 18px;
+    align-items: start;
+    width: 100%;
+}
+
+/* MOVIE CARDS */
+.favorite-movies .product-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 240px;
+    min-width: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--header-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.favorite-movies .product-container:hover {
+    transform: scale(1.03);
+}
+
+/* MOVIE POSTERS */
+.favorite-movies .product-image-container {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+}
+
+.favorite-movies .product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MOVIE TITLES */
+.favorite-movies .movie-name-text {
+    margin-top: 10px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* RATINGS */
+.favorite-movies .product-rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.favorite-movies .product-rating-stars {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* REMOVE FAVORITE BUTTON */
+.favorite-movies .remove-favorite-button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px 6px;
+    border: 1px solid var(--tabs);
+    border-radius: 4px;
+    background-color: var(--tabs);
+    color: var(--white-color);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.favorite-movies .remove-favorite-button:hover {
+    background-color: var(--black-color);
+}
+
+/* EMPTY FAVORITES MESSAGE */
+.favorite-movies .empty-favorites {
+    color: var(--little-words);
+    font-size: 16px;
+}
+
+.favorite-movies .empty-favorites a {
+    color: var(--white-color);
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .favorite-main {
+        padding: 20px 12px 30px;
+    }
+
+    .favorite-main h1 {
+        font-size: 23px;
+    }
+
+    .favorite-movies {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 12px;
+    }
+
+    .favorite-movies .product-container {
+        max-width: none;
+        padding: 7px;
+    }
+}
+
