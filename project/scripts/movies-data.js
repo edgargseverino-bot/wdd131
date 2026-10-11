@@ -334,7 +334,7 @@ export const movies = [
       { name: "Gwyneth Paltrow", role: "Tracy Mills", image: "images/profiles/gwyneth_paltrow.webp" },
       { name: "Kevin Spacey", role: "John Doe", image: "images/profiles/kevin_spacey.webp" }
     ],
-  image: [{ post: "images/post/seven.webp", background: "images/post/seven_b.webp" }]  },
+  image: [{ post: "images/post/Seven.webp", background: "images/post/seven_b.webp" }]  },
 
   // {
   //   id: 21,
