@@ -46,17 +46,17 @@ document.getElementById("currentyear").textContent = currentYear;
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 
-let reviews = localStorage.getItem("reviews");
-console.log(reviews);
+const reviewForm = document.querySelector("#review-form");
 
-let reviewCount = Number(localStorage.getItem('reviews'));
-  if(reviewCount === 0){
-    reviewCount = 1;
-  }
-  else{
-    reviewCount +=1;
-  }
+reviewForm.addEventListener("submit", () => {
+    let reviewCount = Number(localStorage.getItem("reviews")) || 0;
+  reviewCount ++;
   localStorage.setItem("reviews", reviewCount);
+});
+
+
+
+
 
 
 
